@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="memberns">
+  <typeAlias alias="member" type="com.ch.iBatis1.model.Member"/>
+  <resultMap id="memberResult"  class="member">
+    <result property="id" 		column="id"/>
+    <result property="email" 	column="email"/>
+    <result property="password" column="password"/>
+    <result property="name" 	column="name"/>
+    <result property="regdate" 	column="regdate"/>
+  </resultMap>
+  <select id="select" parameterClass="string" resultClass="member">
+  	select * from member3 where id=#id#
+  </select>
+  <insert id="insert" parameterClass="member">
+  	insert into member3 values(#id#, #email#, #password#,
+  		#name#, sysdate)
+  </insert>
+ </sqlMap>

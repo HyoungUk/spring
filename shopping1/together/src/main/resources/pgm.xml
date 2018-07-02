@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pgmns">
+	<!-- Use type aliases to avoid typing the full classname every time. -->
+	<resultMap id="pgmResult" type="pgm">
+		<result property="num" column="num" />
+		<result property="host_num" column="host_num" />
+		<result property="prgtype" column="prgtype" />
+		<result property="name" column="name" />
+		<result property="sidename" column="sidename" />
+		<result property="price" column="price" />
+		<result property="place" column="place" />
+		<result property="content" column="content" />
+		<result property="maximum" column="maximum" />
+		<result property="period_start" column="period_start" />
+		<result property="period_end" column="period_end" />
+		<result property="start_date" column="start_date" />
+		<result property="end_date" column="end_date" />
+		<result property="make_date" column="make_date" />
+		<result property="wall_paper_url" column="wall_paper_url" />
+		<result property="wall_paper_name" column="wall_paper_name" />
+	</resultMap>
+	<insert id="add" parameterType="int">
+			insert into pgm values (prg_seq.nextval, #{host_num}, #{prgtype},
+				#{name}, #{sidename}, #{price}, #{place}, #{content}, #{maximum},
+				#{period_start}, #{period_end}, #{start_date}, #{end_date}, sysdate, #{wall_paper_url}, #{wall_paper_name})
+	</insert>
+	
+	<select id="list" resultMap="pgmResult">
+		select * from pgm
+	</select>
+	
+	<select id="check" parameterType="string" resultType="pgm" >
+		select * from pgm where wall_paper_name=#{fileName}
+	</select>
+	
+	<select id="select" parameterType="int" resultType="pgm" >
+		select * from pgm where num=#{num}
+	</select>
+</mapper>
+
+
+

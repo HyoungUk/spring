@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memberns">
+<!-- Use type aliases to avoid typing the full classname every time. -->
+	<resultMap id="memberResult" 	type="member">
+		<result property="mb_num" 		column="mb_num"/>
+		<result property="id" 			column="id"/>
+		<result property="password" 	column="password"/>
+		<result property="nick_name" 	column="nick_name"/>
+		<result property="name" 		column="name"/>
+		<result property="tel" 			column="tel"/>
+		<result property="addr" 		column="addr"/>
+		<result property="gender" 		column="gender"/>
+		<result property="inside" 		column="inside"/>
+		<result property="outside" 		column="outside"/>
+		<result property="birth" 		column="birth"/>
+		<result property="email" 		column="email"/>
+		<result property="acountCr" 	column="acountCr"/>
+		<result property="del" 			column="del"/>
+		<result property="manager" 		column="manager"/>
+		<result property="host" 		column="host"/>
+	</resultMap>
+	<insert id="join" parameterType="int">
+			insert into member values (mb_num_seq.nextval, #{id, jdbcType=VARCHAR}, #{password, jdbcType=VARCHAR}, #{nick_name, jdbcType=VARCHAR},
+				#{name, jdbcType=VARCHAR}, #{tel, jdbcType=VARCHAR}, #{addr, jdbcType=VARCHAR}, #{gender, jdbcType=VARCHAR}, 0, 0,
+				#{birth, jdbcType=VARCHAR}, #{email, jdbcType=VARCHAR}, sysdate, 'n', 'n', 'n')
+	</insert>
+	
+	<select id="login" parameterType="string" resultType="member">
+			select * from member where id=#{id}
+	</select>
+	
+	<select id="select" parameterType="int" resultType="member" >
+		select * from member where mb_num=#{mb_num}
+	</select>
+	
+	<update id="update" parameterType="member">
+		update member set password=#{password}, nick_name=#{nick_name}, tel=#{tel},
+			addr=#{addr}, email=#{email} where id=#{id}
+	</update>
+	
+	<update id="hostupdate" parameterType="member">
+		update member set host=#{host} where mb_num=#{mb_num}
+	</update>
+	
+	<update id="delete" parameterType="string">
+		update member set del='y' where id=#{id}
+	</update>
+	
+	
+</mapper>
+
+
+

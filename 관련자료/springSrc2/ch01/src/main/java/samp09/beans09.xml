@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="output" class="samp09.FileOutput">
+		<property name="fileName" value="f2.txt"></property>
+	</bean>
+	<bean id="vh" class="samp09.VehicleImpl">
+		<property name="name" value="길똥"></property>
+		<property name="rider" value="로케트"></property>
+		 <property name="output" ref="output"></property>
+	</bean>
+</beans>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+<!-- <bean id="handlerMapping"
+ 		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<value>
+				/list.html=ic1
+				/detail.html=ic1
+				/deptList.html=dc1				
+			</value>
+		</property>
+	</bean> -->
+	<context:annotation-config/>
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+<!-- <bean id="ic1" class="com.ch.shopping2.controller.ItemController"></bean>
+	<bean id="dc1" class="com.ch.shopping2.controller.DeptController"></bean> -->
+	<context:component-scan base-package="com.ch.shopping2"></context:component-scan>
+	
+</beans>

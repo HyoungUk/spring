@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="out" class="samp08.FileOutput">
+		<property name="fileName" value="f1.txt"></property>
+	</bean>
+	<bean id="mb" class="samp08.MessageBeanImpl">
+		<property name="name" value="표준"></property>
+		<property name="greet" value="안뇽"></property>
+		<property name="out" ref="out"></property>
+	</bean>
+</beans>

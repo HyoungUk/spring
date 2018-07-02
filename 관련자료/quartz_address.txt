@@ -1,0 +1,1 @@
+http://terracotta.org/downloads/open-source/destination?name=quartz-1.8.5.tar.gz&bucket=tcdistributions&file=quartz-1.8.5.tar.gz

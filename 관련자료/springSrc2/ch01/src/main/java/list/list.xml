@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="list" class="list.ListBean">
+		<property name="list">
+			<list>
+				<value>구렁이</value>
+				<value>구렁삼</value>
+				<value>구렁사</value>
+				<value>구렁오</value>
+				<value>구렁육</value>
+			</list>		
+		</property>
+	</bean>
+</beans>

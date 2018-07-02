@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mb" name="a" class="samp03.MessageBeanEn"></bean>
+	<bean id="mb5" class="samp05.MessageBeanImpl">
+		<constructor-arg>
+			<value>홍길동님 </value>
+		</constructor-arg>
+		<constructor-arg value="안녕하세요">
+		</constructor-arg>
+	</bean>
+</beans>

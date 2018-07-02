@@ -1,0 +1,1 @@
+mysql -u root -pmysql -t -vvv < 2-4.sql

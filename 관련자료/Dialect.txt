@@ -1,0 +1,27 @@
+Mysql : net.sf.hibernate.dialect.MySQLDialect
+Oracle(any) : net.sf.hibernate.dialect.OracleDialect
+(9i, 10g)   : net.sf.hibernate.dialect.Oracle9Dialect
+
+http://www.oracle.com/technetwork/java/javaee/jta/index.html
+
+자바에서 쓰이는 jar파일에
+
+추가로 class를 넣고 새로 압축하고 싶을 때
+
+일반 winrar, winzip으로 압축을 하면 안된다!
+
+"시작 + r" 키를 눌러서 cmd를 눌러 커맨드 창을 띄운 후
+
+압축하고자 하는 폴더에 간 후에
+
+jar cvf koro.jar .   
+
+이렇게 치면 그 폴더내의 모든 것들이 koro.jar로 압축이 된다.
+
+koro.jar  뒤에 한칸 띄우고   .  을 잊으면 안된다!!!
+
+점 빼먹으면 안된다...!
+
+http://www.slf4j.org/download.html
+
+http://repository.jboss.org/

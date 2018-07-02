@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks>
+   <site url="http://dist.springsource.com/release/TOOLS/update/e3.7" selected="true" name="SpringSource Update Site for Eclipse 3.7"/>
+   <site url="http://dist.springsource.com/release/TOOLS/composite/e3.7" selected="true" name="SpringSource Update Site for Eclipse 3.7 (Dependencies)"/>
+   <site url="http://download.eclipse.org/releases/indigo" selected="true" name="Indigo"/>
+</bookmarks>

@@ -1,0 +1,4 @@
+java.sun.com -> javase
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
+- documentation -> API
+http://docs.oracle.com/javase/7/docs/api/

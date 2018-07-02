@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="samp06.MessageBean"/>
+    <fullyQualifiedTypeName name="samp07.MessageBean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.FileSystemXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="samp08.Vehicle"/>
+    <fullyQualifiedTypeName name="samp09.MessageBean"/>
+    <fullyQualifiedTypeName name="Vehicle.Vehicle"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.GenericApplicationContext"/>
+    <fullyQualifiedTypeName name="samp10.Vehicle"/>
+    <fullyQualifiedTypeName name="samp11.Product"/>
+    <fullyQualifiedTypeName name="samp11.ProductDao"/>
+    <fullyQualifiedTypeName name="samp11.ProductService"/>
+    <fullyQualifiedTypeName name="com.sun.deploy.jcp.Main"/>
+    <fullyQualifiedTypeName name="samp12.BookService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="samp13.ProductService"/>
+    <fullyQualifiedTypeName name="samp14.BookService"/>
+    <fullyQualifiedTypeName name="javax.annotation.processing.SupportedAnnotationTypes"/>
+    <fullyQualifiedTypeName name="samp14.BookServiceImpl"/>
+    <fullyQualifiedTypeName name="samp14.BookDao"/>
+    <fullyQualifiedTypeName name="samp15.MemberDao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="samp15.MemberService"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="samp15.RegisterMember"/>
+    <fullyQualifiedTypeName name="samp15.Member"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+</qualifiedTypeNameHistroy>

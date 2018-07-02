@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="member" type="com.project.together.member.Member" />
+		<typeAlias alias="tboard" type="com.project.together.board.TBoard" />
+		<typeAlias alias="rboard" type="com.project.together.board.ReplyTBoard" />
+		<typeAlias alias="host" type="com.project.together.host.Host" />
+		<typeAlias alias="tboard_no" type="com.project.together.board_no.TBoard_no" />
+		<typeAlias alias="pgm" type="com.project.together.pgm.Pgm" />
+		<typeAlias alias="pgmApply" type="com.project.together.pgmapply.PgmApply" />
+		
+	</typeAliases>
+	<mappers>
+		<mapper resource="member.xml" />
+		<mapper resource="tboard.xml" />
+		<mapper resource="rboard.xml" />
+		<mapper resource="host.xml" />
+		<mapper resource="tboard_no.xml" />
+		<mapper resource="pgm.xml" />
+		<mapper resource="pgmApply.xml" />
+	</mappers>
+</configuration>

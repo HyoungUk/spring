@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="hello"/>
+<aop-project name="shopping1"/>
+<aop-project name="ch08"/>
+<aop-project name="ch06"/>
+<aop-project name="ch04"/>
+<aop-project name="ch02">
+<aspect-definition advice-class-name="samp02.MyAdvice" advice-method-name="around(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="9" aspect-name="myAdvice" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" pointcut-expression="execution(* getProduct())" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ch02|3:src/main/java/samp02/samp02.xml|7:beans:8|8:productServiceImpl:8" bean-file="/ch02/src/main/java/samp02/samp02.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" source="=ch02/src\/main\/java&lt;samp02{MyAdvice.java[MyAdvice~around~QProceedingJoinPoint;" source-start-line="20" target="=ch02/src\/main\/java&lt;samp02{ProductServiceImpl.java[ProductServiceImpl~getProduct" target-start-line="8"/>
+</aspect-definition>
+<aspect-definition advice-class-name="samp02.MyAdvice" advice-method-name="afterRe(samp02.Product)" advice-type="AFTER_RETURNING" aspect-end-line-number="9" aspect-name="myAdvice" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" pointcut-expression="execution(* getProduct())" proxy-target-class="false" returning="p">
+<aop-reference advice-type="AFTER_RETURNING" bean="1:BeansModel|2:ch02|3:src/main/java/samp02/samp02.xml|7:beans:8|8:productServiceImpl:8" bean-file="/ch02/src/main/java/samp02/samp02.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" source="=ch02/src\/main\/java&lt;samp02{MyAdvice.java[MyAdvice~afterRe~QProduct;" source-start-line="35" target="=ch02/src\/main\/java&lt;samp02{ProductServiceImpl.java[ProductServiceImpl~getProduct" target-start-line="8"/>
+</aspect-definition>
+<aspect-definition advice-class-name="samp02.MyAdvice" advice-method-name="afterTh(java.lang.Throwable)" advice-type="AFTER_THROWING" aspect-end-line-number="9" aspect-name="myAdvice" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" pointcut-expression="execution(* getProduct())" proxy-target-class="false" throwing="e">
+<aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:ch02|3:src/main/java/samp02/samp02.xml|7:beans:8|8:productServiceImpl:8" bean-file="/ch02/src/main/java/samp02/samp02.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" source="=ch02/src\/main\/java&lt;samp02{MyAdvice.java[MyAdvice~afterTh~QThrowable;" source-start-line="31" target="=ch02/src\/main\/java&lt;samp02{ProductServiceImpl.java[ProductServiceImpl~getProduct" target-start-line="8"/>
+</aspect-definition>
+<aspect-definition advice-class-name="samp02.MyAdvice" advice-method-name="after" advice-type="AFTER" aspect-end-line-number="9" aspect-name="myAdvice" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" pointcut-expression="execution(* getProduct())" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:ch02|3:src/main/java/samp02/samp02.xml|7:beans:8|8:productServiceImpl:8" bean-file="/ch02/src/main/java/samp02/samp02.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" source="=ch02/src\/main\/java&lt;samp02{MyAdvice.java[MyAdvice~after" source-start-line="27" target="=ch02/src\/main\/java&lt;samp02{ProductServiceImpl.java[ProductServiceImpl~getProduct" target-start-line="8"/>
+</aspect-definition>
+<aspect-definition advice-class-name="samp02.MyAdvice" advice-method-name="before(org.aspectj.lang.JoinPoint)" advice-type="BEFORE" aspect-end-line-number="9" aspect-name="myAdvice" aspect-start-line-number="9" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" pointcut-expression="execution(* getProduct())" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:ch02|3:src/main/java/samp02/samp02.xml|7:beans:8|8:productServiceImpl:8" bean-file="/ch02/src/main/java/samp02/samp02.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch02/src/main/java/samp02/samp02.xml" source="=ch02/src\/main\/java&lt;samp02{MyAdvice.java[MyAdvice~before~QJoinPoint;" source-start-line="15" target="=ch02/src\/main\/java&lt;samp02{ProductServiceImpl.java[ProductServiceImpl~getProduct" target-start-line="8"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="shopping2"/>
+<aop-project name="ch07"/>
+<aop-project name="ch01"/>
+<aop-project name="ch03"/>
+<aop-project name="ch10"/>
+<aop-project name="together"/>
+</aop-reference-model>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="mb" name="a" class="samp03.MessageBeanEn"></bean>
+	<bean id="mb2" class="samp04.MessageBeanImpl">
+		<constructor-arg><value>Hello </value></constructor-arg>
+		<constructor-arg value="honey"></constructor-arg>
+	</bean>
+</beans>

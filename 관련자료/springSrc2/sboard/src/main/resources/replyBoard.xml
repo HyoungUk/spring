@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rboardns">
+	<resultMap id="rboardResult" 		type="rboard">
+		<result property="rno" 			column="rno" />
+		<result property="bno" 			column="bno" />
+		<result property="replytext" 	column="replytext" />
+		<result property="replyer" 		column="replyer" />
+		<result property="regdate" 		column="regdate" />
+		<result property="updatedate" 	column="updatedate" />
+		<result property="del" 			column="del" />
+	</resultMap>
+	<select id="list" parameterType="int" resultMap="rboardResult">
+		select * from replyBoard where bno=#{bno} order by rno
+	</select>
+	<insert id="insert" parameterType="rboard">
+		<selectKey keyProperty="rno" resultType="int" order="BEFORE">
+			select nvl(max(rno),0) + 1 from replyBoard
+		</selectKey>
+		insert into replyBoard values (#{rno},#{bno},#{replytext},
+			#{replyer},sysdate,sysdate,'n')
+	</insert>
+	<update id="delete" parameterType="int">
+		update replyBoard set del='y' where rno=#{rno}
+	</update>
+	<update id="update" parameterType="rboard">
+		update replyBoard set replytext=#{replytext},
+			updatedate=sysdate where rno=#{rno}
+	</update>
+</mapper>
